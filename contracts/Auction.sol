@@ -55,7 +55,7 @@ contract Auction {
 
         ended = true;
     }
-
+    // Improve
     function takeEarnings() public {
         require(msg.sender == seller, "You are not allowed to take the earnings");
         seller.transfer(address(this).balance);
